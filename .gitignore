@@ -294,7 +294,6 @@ __pycache__/
 # Ignore Umbraco folders
 Umbraco/
 Umbraco_Client/
-Media/
 **/App_Data/wkhtmltoimage/*
 
 # Environment Configs
