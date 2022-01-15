@@ -1,0 +1,10 @@
+﻿@using Umbraco.Cheatsheet.Core
+@inherits UmbracoViewPage<MultiUrlPicker>
+
+@foreach (var link in Model.Links)
+{
+    <a href="@link.Url" target="@link.Target">
+        @link.Name
+    </a>
+    <br />
+}

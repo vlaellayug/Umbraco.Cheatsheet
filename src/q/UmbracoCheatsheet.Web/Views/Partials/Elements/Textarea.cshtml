@@ -1,0 +1,15 @@
+﻿@using Umbraco.Cheatsheet.Core
+@using Umbraco.Cheatsheet.Core.Extensions
+@inherits UmbracoViewPage<Textarea>
+
+<!--the default way-->
+<h1>Variant 1</h1>
+<p>@Model.Text</p>
+
+<!--the "p" tag will not be rendered if Model.Text doesn't have a value-->
+@Html.Wrap("h1", "Variant 2")
+@Html.Wrap("p", Model.Text)
+
+<!--this will convert \r and \n in textarea to <br/> so "spaces" will be effective in textarea-->
+<h1>Variant 3</h1>
+<p>@Model.Text.ToReplaceLineBreak()</p>

@@ -1,0 +1,30 @@
+﻿@using Umbraco.Cheatsheet.Core
+@inherits UmbracoViewPage<MultipleMediaPicker>
+
+<!--If the user didn't choose an image this will render an error on the page'-->
+<h1>Variant 1</h1>
+
+@foreach (var image in Model.Images)
+{
+    <img src="@image.Url()" />
+    <br/>
+}
+
+<!--Error handling for Variant 1 use case-->
+<h1>Variant 2</h1>
+@foreach (var image in Model.Images)
+{
+    if (image != null)
+    {
+        <img src="@image.Url()" />
+        <br/>
+    }
+}
+
+<!--Short hand error handling for Variant 2 use case-->
+@Html.Wrap("h1", "Variant 3")
+@foreach (var image in Model.Images)
+{
+    <img src="@(image.Url())" />
+    <br/>
+}

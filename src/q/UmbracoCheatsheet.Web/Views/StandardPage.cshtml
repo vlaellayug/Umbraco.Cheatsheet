@@ -1,0 +1,8 @@
+﻿@using Umbraco.Cheatsheet.Core
+@using Umbraco.Cheatsheet.Core.Extensions
+@inherits Umbraco.Web.Mvc.UmbracoViewPage<StandardPage>
+
+@{
+    Layout = "Master.cshtml";
+    this.RenderElements(Model.Elements, "Elements");
+}
