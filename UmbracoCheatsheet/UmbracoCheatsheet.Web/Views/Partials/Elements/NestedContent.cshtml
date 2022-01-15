@@ -1,0 +1,46 @@
+﻿@using Umbraco.Cheatsheet.Core
+@inherits UmbracoViewPage<NestedContent>
+
+<h1>Variant 1</h1>
+@foreach (var item in Model.Items)
+{
+    //Text field
+    <h1>@item.Text</h1>
+
+    //Image field
+    if (item.Image != null)
+    {
+        <img src="@item.Image.Url()" />
+    }
+
+    //Links field
+    foreach (var link in item.Links)
+    {
+        <p>
+            <a href="@link.Url" target="@link.Target">
+                @link.Name
+            </a>
+        </p>
+    }
+}
+
+<!--Short hand error handling for Variant 1 use case-->
+<h1>Variant 2</h1>
+@foreach (var item in Model.Items)
+{
+    //Text field
+    @Html.Wrap("h1", item.Text)
+
+    //Image field
+    <img src="@(item.Image?.Url())" />
+
+    //Links field
+    foreach (var link in item.Links)
+    {
+        <p>
+            <a href="@link.Url" target="@link.Target">
+                @link.Name
+            </a>
+        </p>
+    }
+}

@@ -1,0 +1,11 @@
+﻿@using Umbraco.Cheatsheet.Core
+@inherits UmbracoViewPage<Textstring>
+
+<!--the default way-->
+<h1>Variant 1</h1>
+<p>@Model.Text</p>
+
+<!--the "p" tag will not be rendered if Model.Text doesn't have a value-->
+@Html.Wrap("h1", "Variant 2")
+@Html.Wrap("p", Model.Text)
+
