@@ -26,6 +26,10 @@ namespace Umbraco.Cheatsheet.Core
 		/// <summary>Elements</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.17.1")]
 		global::System.Collections.Generic.IEnumerable<global::Umbraco.Core.Models.PublishedContent.IPublishedElement> Elements { get; }
+
+		/// <summary>Notes</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.17.1")]
+		string Notes { get; }
 	}
 
 	/// <summary>Content Composition</summary>
@@ -63,5 +67,16 @@ namespace Umbraco.Cheatsheet.Core
 		/// <summary>Static getter for Elements</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.17.1")]
 		public static global::System.Collections.Generic.IEnumerable<global::Umbraco.Core.Models.PublishedContent.IPublishedElement> GetElements(IContentComposition that) => that.Value<global::System.Collections.Generic.IEnumerable<global::Umbraco.Core.Models.PublishedContent.IPublishedElement>>("elements");
+
+		///<summary>
+		/// Notes
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.17.1")]
+		[ImplementPropertyType("notes")]
+		public virtual string Notes => GetNotes(this);
+
+		/// <summary>Static getter for Notes</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.17.1")]
+		public static string GetNotes(IContentComposition that) => that.Value<string>("notes");
 	}
 }

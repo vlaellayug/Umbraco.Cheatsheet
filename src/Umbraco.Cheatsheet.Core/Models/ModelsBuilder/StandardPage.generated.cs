@@ -50,5 +50,12 @@ namespace Umbraco.Cheatsheet.Core
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.17.1")]
 		[ImplementPropertyType("elements")]
 		public virtual global::System.Collections.Generic.IEnumerable<global::Umbraco.Core.Models.PublishedContent.IPublishedElement> Elements => global::Umbraco.Cheatsheet.Core.ContentComposition.GetElements(this);
+
+		///<summary>
+		/// Notes
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.17.1")]
+		[ImplementPropertyType("notes")]
+		public virtual string Notes => global::Umbraco.Cheatsheet.Core.ContentComposition.GetNotes(this);
 	}
 }

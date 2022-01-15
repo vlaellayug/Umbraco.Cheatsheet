@@ -45,10 +45,17 @@ namespace Umbraco.Cheatsheet.Core
 		// properties
 
 		///<summary>
-		/// Redirect
+		/// API Link
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.17.1")]
-		[ImplementPropertyType("umbracoRedirect")]
-		public virtual string UmbracoRedirect => this.Value<string>("umbracoRedirect");
+		[ImplementPropertyType("apiLink")]
+		public virtual string ApiLink => this.Value<string>("apiLink");
+
+		///<summary>
+		/// Notes
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.17.1")]
+		[ImplementPropertyType("notes")]
+		public virtual string Notes => this.Value<string>("notes");
 	}
 }
