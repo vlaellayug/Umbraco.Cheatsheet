@@ -43,5 +43,12 @@ namespace Umbraco.Cheatsheet.Core
 		{ }
 
 		// properties
+
+		///<summary>
+		/// Main Text
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.17.1")]
+		[ImplementPropertyType("mainText")]
+		public virtual global::System.Web.IHtmlString MainText => this.Value<global::System.Web.IHtmlString>("mainText");
 	}
 }

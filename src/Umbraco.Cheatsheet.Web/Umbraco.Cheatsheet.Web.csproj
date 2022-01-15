@@ -347,6 +347,18 @@
     <Content Include="Views\Partials\Grid\Bootstrap3.cshtml" />
     <Content Include="Views\Partials\Grid\Bootstrap3-Fluid.cshtml" />
     <Content Include="Views\Partials\BlockList\Default.cshtml" />
+    <Content Include="Views\HomePage.cshtml" />
+    <Content Include="Views\Master.cshtml" />
+    <Content Include="Views\StandardPage.cshtml" />
+    <Content Include="Views\UmbracoApiControllerPage.cshtml" />
+    <Content Include="Views\Partials\Elements\MediaPicker.cshtml" />
+    <Content Include="Views\Partials\Elements\MultipleMediaPicker.cshtml" />
+    <Content Include="Views\Partials\Elements\MultiUrlPicker.cshtml" />
+    <Content Include="Views\Partials\Elements\NestedContent.cshtml" />
+    <Content Include="Views\Partials\Elements\RichtextEditor.cshtml" />
+    <Content Include="Views\Partials\Elements\SingleUrlPicker.cshtml" />
+    <Content Include="Views\Partials\Elements\Textarea.cshtml" />
+    <Content Include="Views\Partials\Elements\Textstring.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -1,8 +1,8 @@
-﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+﻿@using Umbraco.Cheatsheet.Core
+@inherits Umbraco.Web.Mvc.UmbracoViewPage<HomePage>
 @{
 	Layout = "Master.cshtml";
 }
 
-<h1>Welcome to Umbraco Cheatsheet.</h1>
-<h2>Login to <a href="/umbraco">backoffice</a> to see the list of guides!</h2>
+@Model.MainText
 
