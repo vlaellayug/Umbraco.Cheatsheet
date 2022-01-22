@@ -8,6 +8,7 @@ namespace Umbraco.Cheatsheet.Core.Services.Implementation
         public void Compose(Composition composition)
         {
             composition.Register<IDataService, DataService>(Lifetime.Singleton);
+            composition.Register<IProductService, ProductService>(Lifetime.Singleton);
         }
     }
 }

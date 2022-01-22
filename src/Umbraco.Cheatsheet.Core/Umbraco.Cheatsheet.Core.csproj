@@ -392,12 +392,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\ApiControllers\ProductApiController.cs" />
     <Compile Include="Controllers\ApiControllers\SampleUmbracoApiController.cs" />
     <Compile Include="Controllers\ApiControllers\SampleUmbracoAuthorizedApiController.cs" />
     <Compile Include="Controllers\ApiControllers\SampleUmbracoPluginApiController.cs" />
     <Compile Include="Controllers\RenderMvcControllers\DashboardPageController.cs" />
     <Compile Include="Extensions\PartialViewExtension.cs" />
     <Compile Include="Extensions\StringHelperExtension.cs" />
+    <Compile Include="Models\ApiModels\ProductApiModel.cs" />
     <Compile Include="Models\ModelsBuilder\ContentComposition.generated.cs" />
     <Compile Include="Models\ModelsBuilder\DashboardPage.generated.cs" />
     <Compile Include="Models\ModelsBuilder\DataFolder.generated.cs" />
@@ -425,11 +427,13 @@
     <Compile Include="Models\ModelsBuilder\UmbracoMediaAudio.generated.cs" />
     <Compile Include="Models\ModelsBuilder\UmbracoMediaVectorGraphics.generated.cs" />
     <Compile Include="Models\ModelsBuilder\UmbracoMediaVideo.generated.cs" />
-    <Compile Include="Models\ViewModels\DashboardVm.cs" />
+    <Compile Include="Models\ViewModels\DashboardViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\IDataService.cs" />
     <Compile Include="Services\Implementation\DataService.cs" />
+    <Compile Include="Services\Implementation\ProductService.cs" />
     <Compile Include="Services\Implementation\ServiceComposer.cs" />
+    <Compile Include="Services\IProductService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

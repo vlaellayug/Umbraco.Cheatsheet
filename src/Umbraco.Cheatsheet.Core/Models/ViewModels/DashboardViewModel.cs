@@ -4,9 +4,9 @@ using Umbraco.Web.Models;
 
 namespace Umbraco.Cheatsheet.Core.Models.ViewModels
 {
-    public class DashboardVm : ContentModel
+    public class DashboardViewModel : ContentModel
     {
-        public DashboardVm(IPublishedContent content) : base(content)
+        public DashboardViewModel(IPublishedContent content) : base(content)
         {
         }
 

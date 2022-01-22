@@ -17,7 +17,7 @@ namespace Umbraco.Cheatsheet.Core.Controllers.RenderMvcControllers
 
         public override ActionResult Index(ContentModel model)
         {
-            var vm = new DashboardVm(model.Content);
+            var vm = new DashboardViewModel(model.Content);
             vm.Products = _dataService.GetProductItems();
 
             return CurrentTemplate(vm);
