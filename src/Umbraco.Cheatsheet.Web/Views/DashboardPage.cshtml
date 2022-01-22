@@ -1,0 +1,17 @@
+﻿@using Umbraco.Cheatsheet.Core.Models.ViewModels
+@inherits Umbraco.Web.Mvc.UmbracoViewPage<DashboardVm>
+@{
+    Layout = "Master.cshtml";
+}
+
+<h1>List of Products</h1>
+@if (Model.Products != null)
+{
+    foreach (var product in Model.Products)
+    {
+        <p>@product.Label</p>
+        <p>@product.Description</p>
+        <p>@product.Price</p>
+    }
+}
+

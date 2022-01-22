@@ -19,26 +19,26 @@ using Umbraco.ModelsBuilder.Embedded;
 
 namespace Umbraco.Cheatsheet.Core
 {
-	/// <summary>Umbraco Api Controller</summary>
-	[PublishedModel("umbracoApiController")]
-	public partial class UmbracoApiController : PublishedContentModel
+	/// <summary>Umbraco Api Controller Page</summary>
+	[PublishedModel("umbracoApiControllerPage")]
+	public partial class UmbracoApiControllerPage : PublishedContentModel
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.17.1")]
-		public new const string ModelTypeAlias = "umbracoApiController";
+		public new const string ModelTypeAlias = "umbracoApiControllerPage";
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.17.1")]
 		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.17.1")]
 		public new static IPublishedContentType GetModelContentType()
 			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.17.1")]
-		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<UmbracoApiController, TValue>> selector)
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<UmbracoApiControllerPage, TValue>> selector)
 			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
 #pragma warning restore 0109
 
 		// ctor
-		public UmbracoApiController(IPublishedContent content)
+		public UmbracoApiControllerPage(IPublishedContent content)
 			: base(content)
 		{ }
 
